@@ -1,4 +1,4 @@
-/*GRID HEADER NAV FOOTER*/
+/*GRID PAGE*/
 
 body {
     display: grid;
@@ -10,7 +10,7 @@ body {
 
 /*HEADER_RIGHT*/
 
-header {
+.header_right {
     grid-row: 1;
     grid-column: 2;
     display: grid;
@@ -21,7 +21,7 @@ header {
     top: 0;
 }
 
-header h1 {
+.header_right h1 {
     margin-left: 10vw;
     font-family: "Montserrat";
 }
@@ -32,7 +32,7 @@ header h1 {
     justify-content: space-evenly;
 }
 
-header input {
+.header_right input {
     width: 15vw;
     height: 6vh;
     border-radius: 50px;
@@ -89,6 +89,16 @@ header input {
 
 .header_left button img {
     width: 2vw;
+}
+
+/*RESPONSIVE CACHÉ*/
+
+.header_responsive {
+    display: none;
+}
+
+.ajouter_responsive {
+    display: none;
 }
 
 /*NAV*/
@@ -302,11 +312,86 @@ main h3 {
 }
 
 .filtre {
-    margin-left: 58vw;
+    margin-right: 3vw;
 }
 
 .violetBar div {
     background-color: #660091;
     height: 1vh;
-    margin-top: 6vh;
+    margin-top: 10vh;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+body {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 5vh auto;
+    margin: 0;
+    background-color: #E6E6E6;
+}
+.header_right {
+    display: none;
+}
+.header_left {
+    display: none;
+}
+nav {
+    display: none;
+}
+footer {
+    display: none;
+}
+.header_responsive {
+    display: flex;
+    grid-column: 1;
+    grid-template-rows: 1;
+    align-items: center;
+    background-color: black;
+    justify-content: space-around;
+    height: 20vh;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+#logo_compte {
+    width: 6.6vw;
+    margin-left: 26vw;
+}
+#logo_burger {
+    width: 6.6vw;
+    margin-right: 26vw;
+}
+main {
+    display: flex;
+    grid-column: 1;
+    grid-template-rows: 2;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Assistant";
+}
+.recents {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 18vh 4vw 0vh 4vw;
+}
+.ajouter_responsive {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0vh 1.5vw 5vh 0vw;
+    position: fixed;
+    bottom: 0vh;
+    right: 0vw;
+}
+.ajouter_responsive button {
+    border: none;
+    background-color: rgb(230, 230, 230, 0);
+}
+.violetBar div {
+    background-color: #660091;
+    height: 1vh;
+    margin-top: 15vh;
+}
 }
