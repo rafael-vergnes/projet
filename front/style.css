@@ -146,11 +146,11 @@ nav a:visited {
 }
 
 .sous_nav img {
-    margin: 0vh 1.5vw 0vh 2.5vw;
+    margin: 0vh 1.5vw 0vh 2vw;
 }
 
 #coffres, #aide {
-    margin: 0vh 1.8vw 0vh 2.8vw;
+    margin: 0vh 1.8vw 0vh 2.35vw;
 }
 
 nav h3 {
@@ -175,11 +175,10 @@ footer {
 .sous_footer {
     grid-column: 1;
     display: flex;
-    align-items: center;
 }
 
 .sous_footer img {
-    margin: 0vh 1.3vw 0vh 2.8vw;
+    margin: 0vh 1.3vw 0vh 2.3vw;
 }
 
 footer button {
@@ -193,6 +192,7 @@ footer button {
 
 footer button img {
     width: 2vw;
+    margin-top: 1vh;
 }
 
 footer a {
@@ -218,7 +218,6 @@ main {
     grid-column: 2;
     display: flex;
     flex-direction: column;
-    padding: 4.5vh 4vw;
     justify-content: space-between;
     font-family: "Assistant";
 }
@@ -226,7 +225,7 @@ main {
 main a {
     background-color: white;
     padding: 2rem;
-    margin: 1vh 0vw;
+    margin: 1vh 4vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -259,6 +258,7 @@ main h3 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 4vh 4vw 0vh 4vw;
 }
 
 .recents div {
@@ -281,7 +281,7 @@ main h3 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 4vh;
+    margin: 4vh 4vw 0vh 4vw;
 }
 
 .justificatifs div {
@@ -303,4 +303,10 @@ main h3 {
 
 .filtre {
     margin-left: 58vw;
+}
+
+.violetBar div {
+    background-color: #660091;
+    height: 1vh;
+    margin-top: 6vh;
 }
