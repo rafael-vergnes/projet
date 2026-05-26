@@ -44,8 +44,8 @@ body {
 }
 
 #logo_compte {
-    width: 4vw;
-    height: 8.5vh;
+    max-width: 100%;
+    height: auto;
 }
 
 /*HEADER_LEFT*/
@@ -202,7 +202,7 @@ footer button {
 
 footer button img {
     width: 2vw;
-    margin-top: 1vh;
+    margin-top: 0.8vh;
 }
 
 footer a {
@@ -252,7 +252,7 @@ main a div {
 }
 
 .pdf {
-    margin-right: 1.5vw;
+    margin-right: 1.4vw;
 }
 
 main a button {
@@ -350,17 +350,22 @@ footer {
     align-items: center;
     background-color: black;
     justify-content: space-around;
-    height: 20vh;
+    height: 15vh;
     position: fixed;
     top: 0;
     width: 100vw;
 }
-#logo_compte {
-    width: 6.6vw;
+.header_responsive a {
+    display: flex;
+}
+#logo_compte_responsive {
+    max-width: 100%;
+    height: auto;
     margin-left: 26vw;
 }
 #logo_burger {
-    width: 6.6vw;
+    max-width: 100%;
+    height: auto;
     margin-right: 26vw;
 }
 main {
@@ -371,11 +376,21 @@ main {
     justify-content: space-between;
     font-family: "Assistant";
 }
+main a {
+    padding: 1.7rem;
+}
+main a button {
+    margin-left: 2.7vw;
+    display: flex;
+}
+main a button img {
+    height: 4vh;
+}
 .recents {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 18vh 4vw 0vh 4vw;
+    margin: 14vh 4vw 0vh 4vw;
 }
 .ajouter_responsive {
     display: flex;
@@ -388,10 +403,351 @@ main {
 .ajouter_responsive button {
     border: none;
     background-color: rgb(230, 230, 230, 0);
+    margin-right: 0.2vw;
 }
 .violetBar div {
     background-color: #660091;
     height: 1vh;
     margin-top: 15vh;
+}
+.pdf {
+    margin-right: 3vw;
+}
+}
+
+
+@media (max-width: 600px) {
+body {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 5vh auto;
+    margin: 0;
+    background-color: #E6E6E6;
+}
+.header_right {
+    display: none;
+}
+.header_left {
+    display: none;
+}
+nav {
+    display: none;
+}
+footer {
+    display: none;
+}
+.header_responsive {
+    display: flex;
+    grid-column: 1;
+    grid-template-rows: 1;
+    align-items: center;
+    background-color: black;
+    justify-content: space-around;
+    height: 15vh;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+.header_responsive a {
+    display: flex;
+}
+#logo_compte_responsive {
+    max-width: 100%;
+    height: auto;
+    margin-left: 23vw;
+}
+#logo_burger {
+    max-width: 100%;
+    height: auto;
+    margin-right: 23vw;
+}
+main {
+    display: flex;
+    grid-column: 1;
+    grid-template-rows: 2;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Assistant";
+}
+main a {
+    padding: 1.6rem;
+}
+.recents {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 14vh 4vw 0vh 4vw;
+}
+.ajouter_responsive {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0vh 1.5vw 5vh 0vw;
+    position: fixed;
+    bottom: 0vh;
+    right: 0vw;
+}
+.ajouter_responsive button {
+    border: none;
+    background-color: rgb(230, 230, 230, 0);
+    margin-right: 0.2vw;
+}
+.violetBar div {
+    background-color: #660091;
+    height: 1vh;
+    margin-top: 15vh;
+}
+.pdf {
+    margin-right: 3vw;
+}
+}
+
+
+
+@media (max-width: 500px) {
+body {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 5vh auto;
+    margin: 0;
+    background-color: #E6E6E6;
+}
+.header_right {
+    display: none;
+}
+.header_left {
+    display: none;
+}
+nav {
+    display: none;
+}
+footer {
+    display: none;
+}
+.header_responsive {
+    display: flex;
+    grid-column: 1;
+    grid-template-rows: 1;
+    align-items: center;
+    background-color: black;
+    justify-content: space-around;
+    height: 15vh;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+.header_responsive a {
+    display: flex;
+}
+#logo_compte_responsive {
+    max-width: 100%;
+    height: auto;
+    margin-left: 21vw;
+}
+#logo_burger {
+    max-width: 100%;
+    height: auto;
+    margin-right: 21vw;
+}
+main {
+    display: flex;
+    grid-column: 1;
+    grid-template-rows: 2;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Assistant";
+}
+main a {
+    padding: 1.2rem;
+}
+main a button {
+    margin-left: 2.7vw;
+    display: flex;
+}
+main a button img {
+    height: 3.5vh;
+}
+.recents {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 13vh 4vw 0vh 4vw;
+}
+.justificatifs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2.5vh 4vw 0vh 4vw;
+}
+.ajouter_responsive {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0vh 1.5vw 5vh 0vw;
+    position: fixed;
+    bottom: 0vh;
+    right: 0vw;
+}
+.ajouter_responsive button {
+    border: none;
+    background-color: rgb(230, 230, 230, 0);
+    margin-right: 0.2vw;
+}
+.violetBar div {
+    background-color: #660091;
+    height: 1vh;
+    margin-top: 15vh;
+}
+.pdf {
+    margin-right: 3vw;
+}
+}
+
+
+
+
+@media (min-width: 320px) and (max-width: 400px){
+body {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 5vh auto;
+    margin: 0;
+    background-color: #E6E6E6;
+}
+.header_right {
+    display: none;
+}
+.header_left {
+    display: none;
+}
+nav {
+    display: none;
+}
+footer {
+    display: none;
+}
+.header_responsive {
+    display: flex;
+    grid-column: 1;
+    grid-template-rows: 1;
+    align-items: center;
+    background-color: black;
+    justify-content: space-around;
+    height: 12vh;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+.header_responsive img {
+    height: 8vh;
+}
+.header_responsive a {
+    display: flex;
+}
+#logo_compte_responsive {
+    max-width: 100%;
+    height: auto;
+    margin-left: 12vw;
+}
+#logo_burger {
+    max-width: 100%;
+    height: auto;
+    margin-right: 12vw;
+}
+main {
+    display: flex;
+    grid-column: 1;
+    grid-template-rows: 2;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Assistant";
+}
+main h3 {
+    font-size: 1rem;
+}
+main a {
+    padding: 0.8rem;
+    font-size: 1rem;
+}
+main p {
+    font-size: 0.8rem;
+}
+main a button {
+    margin-left: 2.7vw;
+    display: flex;
+}
+main a button img {
+    height: 3vh;
+}
+.recents {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10vh 4vw 0vh 4vw;
+}
+.justificatifs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2vh 4vw 0vh 4vw;
+}
+.ajouter_responsive {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0vh 1.5vw 5vh 0vw;
+    position: fixed;
+    bottom: 0vh;
+    right: 0vw;
+}
+.ajouter_responsive button {
+    border: none;
+    background-color: rgb(230, 230, 230, 0);
+    margin-right: 0.2vw;
+}
+.violetBar div {
+    background-color: #660091;
+    height: 1vh;
+    margin-top: 10vh;
+}
+.pdf {
+    margin-right: 3vw;
+}
+}
+
+
+
+@media (min-width: 769px) and (max-width: 1024px){
+body {
+    display: grid;
+    grid-template-columns: 20vw auto;
+    grid-template-rows: 20vh 60vh 20vh;
+    margin: 0;
+    background-color: #E6E6E6;
+}
+.header_left {
+    grid-template-columns: 5vw 10vw 5vw;
+}
+.header_left button {
+    margin-left: 1.9vw;
+}
+.header_right {
+    grid-template-columns: 43vw auto;
+}
+.header_right h1 {
+    margin-left: 8vw;
+    font-family: "Montserrat";
+}
+.header_right input {
+    width: 18vw;
+    padding-left: 2.5vw;
+}
+nav {
+    width: 20vw;
+}
+footer {
+    width: 20vw;
+    grid-template-columns: 15vw 5vw;
+}
+footer button {
+    margin-left: 1.9vw;
 }
 }
