@@ -706,7 +706,7 @@ main a button img {
 .violetBar div {
     background-color: #660091;
     height: 1vh;
-    margin-top: 10vh;
+    margin-top: 14vh;
 }
 .pdf {
     margin-right: 3vw;
@@ -739,9 +739,121 @@ body {
 .header_right input {
     width: 18vw;
     padding-left: 2.5vw;
+    font-size: 0.9rem;
+}
+.champ_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#logo_compte {
+    max-width: 80%;
+    height: auto;
 }
 nav {
     width: 20vw;
+}
+nav button {
+    font-size: 0.7rem;
+}
+nav button img {
+    margin-right: 0.4vw;
+    width: 1.5vw;
+}
+nav a img {
+    width: 3vw;
+}
+nav a {
+    font-size: 1.2rem;
+    padding-left: 1.6vw;
+}
+#coffres, #aide {
+    margin: 0vh 1.8vw 0vh 2.4vw;
+    width: 2.2vw;
+}
+footer {
+    width: 20vw;
+    grid-template-columns: 15vw 5vw;
+}
+footer a {
+    font-size: 1.2rem;
+    padding-left: 1.6vw;
+}
+footer a img {
+    width: 2.8vw;
+}
+footer button {
+    margin-left: 1.9vw;
+}
+h1 {
+    font-size: 1.5rem;
+}
+main a {
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+main a button img {
+    height: 4vh;
+}
+p {
+    font-size: 0.9rem;
+}
+.recents button img {
+    height: 4vh;
+}
+.justificatifs button img {
+    height: 4vh;
+}
+.pdf {
+    width: 3vw;
+}
+}
+
+
+
+
+@media (min-width: 1025px) and (max-width: 1440px){
+body {
+    display: grid;
+    grid-template-columns: 20vw auto;
+    grid-template-rows: 20vh 60vh 20vh;
+    margin: 0;
+    background-color: #E6E6E6;
+}
+.header_left {
+    grid-template-columns: 5vw 10vw 5vw;
+}
+.header_left button {
+    margin-left: 1.9vw;
+}
+.header_right {
+    grid-template-columns: 43vw auto;
+}
+.header_right h1 {
+    margin-left: 8vw;
+    font-family: "Montserrat";
+}
+.header_right input {
+    width: 16vw;
+    padding-left: 2vw;
+}
+.champ_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#logo_compte {
+    max-width: 80%;
+    height: auto;
+}
+nav {
+    width: 20vw;
+}
+.sous_nav {
+    padding-left: 2.5vw;
+}
+#coffres, #aide {
+    margin: 0vh 1.8vw 0vh 2.40vw;
 }
 footer {
     width: 20vw;
@@ -749,5 +861,126 @@ footer {
 }
 footer button {
     margin-left: 1.9vw;
+}
+.sous_footer {
+    padding-left: 2.5vw;
+}
+main h3 {
+    font-family: "Montserrat";
+    font-size: 1.4rem;
+}
+}
+
+
+
+
+@media (min-width: 1441px) and (max-width: 2560px){
+body {
+    display: grid;
+    grid-template-columns: 18vw auto;
+    grid-template-rows: 20vh 60vh 20vh;
+    margin: 0;
+    background-color: #E6E6E6;
+}
+.header_left {
+    grid-template-columns: 4.5vw 9vw 4.5vw;
+}
+.header_left button {
+    margin-left: 1.9vw;
+}
+.header_right {
+    grid-template-columns: 43vw auto;
+}
+.header_right h1 {
+    margin-left: 8vw;
+    font-family: "Montserrat";
+}
+.header_right input {
+    width: 16vw;
+    padding-left: 2vw;
+    font-size: 1.6rem;
+}
+.champ_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#logo_compte {
+    width: 5vw;
+    height: auto;
+}
+nav {
+    width: 18vw;
+}
+.sous_nav {
+    padding-left: 2vw;
+}
+.sous_nav a {
+    font-size: 2.5rem;
+}
+.sous_nav img {
+    width: 2.5vw;
+}
+#coffres, #aide {
+    width: 2vw;
+}
+nav button {
+    background-color: #660091;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 1.2vh 1vw 1.2vh 0.6vw;
+    justify-self: center;
+    margin: 1vh 0vw 4vh 0vw;
+    font-family: "Assistant";
+    font-weight: bolder;
+    font-size: 1.4rem;
+}
+nav button img {
+    margin-right: 0.3vw;
+    width: 1.1vw;
+}
+#coffres, #aide {
+    margin: 0vh 1.8vw 0vh 2.24vw;
+}
+footer {
+    width: 18vw;
+    grid-template-columns: 13.5vw 4.5vw;
+}
+footer button {
+    margin-left: 1.9vw;
+}
+.sous_footer {
+    padding-left: 2.5vw;
+}
+.sous_footer a {
+    font-size: 2.5rem;
+}
+.sous_footer img {
+    width: 2.5vw;
+}
+main a {
+    font-size: 2rem;
+}
+.pdf {
+    width: 3vw;
+}
+main a button img {
+    height: 4vh;
+}
+h1, h2 {
+    font-size: 2.5rem;
+}
+h3 {
+    font-size: 2.3rem;
+}
+p {
+    font-size: 1.8rem;
+}
+.recents img {
+    width: 2.2vw;
+}
+.justificatifs img {
+    width: 2.2vw;
 }
 }
