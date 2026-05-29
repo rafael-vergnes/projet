@@ -39,7 +39,7 @@ Le **diagramme de cas d'utilisation** est disponible directement à la racine de
 ## Structure du Projet
 
 ```text
-├── Diagramme d’utilisation projet fil rouge Rafaël VERGNES.mdj   # Modélisation des besoins
+├── diagramme_cas_d_utilisation.jpg   # Modélisation des besoins
 └── front /               # Partie Front-End
     ├── accueil.html      # Page d'accueil responsive
     ├── style.css         # Feuilles de style
