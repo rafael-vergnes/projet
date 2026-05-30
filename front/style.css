@@ -8,6 +8,10 @@ body {
     background-color: #E6E6E6;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 /*HEADER_RIGHT*/
 
 .header_right {
@@ -230,6 +234,19 @@ main {
     flex-direction: column;
     justify-content: space-between;
     font-family: "Assistant";
+}
+
+#theInsideFilter {
+    display: none;
+    width: 35vw;
+    justify-content: space-evenly;
+}
+
+#theInsideFilter button {
+    background-color: white;
+    border: 1px solid black;
+    padding: 1vh 0.5vw;
+    font-size: 1rem;
 }
 
 main a {
@@ -874,7 +891,7 @@ main h3 {
 
 
 
-@media (min-width: 1441px) and (max-width: 2560px){
+@media (min-width: 2000px) and (max-width: 2560px){
 body {
     display: grid;
     grid-template-columns: 18vw auto;
@@ -951,7 +968,7 @@ footer button {
     margin-left: 1.9vw;
 }
 .sous_footer {
-    padding-left: 2.5vw;
+    padding-left: 2vw;
 }
 .sous_footer a {
     font-size: 2.5rem;

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffres</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer type="module" src="main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header_right">
+        <h1>Coffres</h1>
+        <div class="champ_header">
+            <label for="recherche" method="HOST"></label>
+            <input type="text" name="recherche" id="recherche" placeholder="Recherche">
+            <a href="#"><img id="logo_compte" src="./images/logo_compte.png" alt="logo d'une personne symbolisant l'espace compte"></a>
+        </div>
+    </header>
+
+    <div class="header_left">
+        <div class="logo">
+            <img src="./images/logo_arcance.png" alt="logo d'arcance">
+            <h2>ARCANCE</h2>
+        </div>
+        <button><img src="./images/logo_reduire.png" alt="logo inférieur à, symbolant le fait de réduire la  taille"></button>
+    </div>
+
+    <div class="header_responsive">
+        <a href="#"><img id="logo_burger" src="./images/logo_burger.png" alt="logo d'un menu en forme de burger'"></a>
+        <img src="./images/logo_arcance.png" alt="logo d'arcance">
+        <a href="#"><img id="logo_compte_responsive" src="./images/logo_compte_blanc.png" alt="logo d'une personne symbolisant l'espace compte"></a>
+    </div>
+
+    <nav>    
+        <button><img src="./images/logo_plus.png" alt="logo d'un plus">Ajouter un élément</button>
+        <div class="sous_nav" id="bouton_accueil">
+            <a href="#"><img src="./images/logo_accueil.png" alt="logo d'une maison">Accueil</a>
+        </div>
+        <div class="sous_nav">
+            <a href="#"><img id="coffres" src="./images/logo_coffres.png" alt="logo d'une forme géométrique">Coffres</a>
+        </div>
+        <div class="sous_nav">
+            <a href="#"><img src="./images/logo_offres.png" alt="logo d'un diamant">Offres</a>
+        </div>
+        <div class="sous_nav">
+            <a href="#"><img src="./images/logo_corbeille.png" alt="logo d'une corbeille">Corbeille</a>
+        </div>
+        <div class="sous_nav">
+            <a href="#"><img id="aide" src="./images/logo_aide.png" alt="logo d'une point d'interrogation">Aide</a>
+        </div>
+    </nav>
+    
+    <main>
+        <div class="justificatifs">
+            <h3>Documents</h3>
+            <div class="grand_filtre">
+            <div class="filtre">
+                <p>Filtrer</p>
+                <button class="bouton_filtre"><img src="./images/logo_filtrer.png" alt="logo d'un entonnoir"></button>
+                <div id="theInsideFilter">
+                    <button class="bouton_finance">Finance</button>
+                    <button class="bouton_education">Éducation</button>
+                    <button class="bouton_professionnel">Professionnel</button>
+                    <button class="bouton_personnel">Personnel</button>
+                    <button class="bouton_logement">Logement</button>
+                </div>
+            </div>
+            <div>
+                <p>Trier</p>
+                <button><img src="./images/logo_trier.png" alt="logo de 4 carrés symbolant l'action de trier"></button>
+            </div>
+            </div>
+        </div>
+        <a class="Finance" href="./assets/lorem_pdf.pdf"><div><img class="pdf" src="./images/logo_pdf.png" alt="image d'un document pdf">RIB</div><button><img src="./images/logo_points.png" alt="logo de 3 points pour afficher des options"></button></a>
+        <a class="Éducation" href="./assets/lorem_pdf.pdf"><div><img class="pdf" src="./images/logo_pdf.png" alt="image d'un document pdf">Relevés de notes 2024</div><button><img src="./images/logo_points.png" alt="logo de 3 points pour afficher des options"></button></a>
+        <a class="Professionnel" href="./assets/lorem_pdf.pdf"><div><img class="pdf" src="./images/logo_pdf.png" alt="image d'un document pdf">Bulletin de salaire - Mars 2026</div><button><img src="./images/logo_points.png" alt="logo de 3 points pour afficher des options"></button></a>
+        <a class="Personnel" href="./assets/lorem_pdf.pdf"><div><img class="pdf" src="./images/logo_pdf.png" alt="image d'un document pdf">Carte nationale d'identité</div><button><img src="./images/logo_points.png" alt="logo de 3 points pour afficher des options"></button></a>
+        <a class="Logement" href="./assets/lorem_pdf.pdf"><div><img class="pdf" src="./images/logo_pdf.png" alt="image d'un document pdf">Contrat de location</div><button><img src="./images/logo_points.png" alt="logo de 3 points pour afficher des options"></button></a>
+
+        <div class="ajouter_responsive">
+            <button><img src="./images/logo_ajouter.png" alt=""></button>
+        </div>
+
+        <div class="violetBar">
+            <div></div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="sous_footer">
+            <a href="#"><img src="./images/logo_legal.png" alt="logo d'un document">Légal</a>
+        </div>
+        <button><img src="./images/logo_augmenter.png" alt="logo supérieur à, symbolant le fait d'augmenter la  taille, d'ouvrir"></button>
+    </footer>
+
+</body>
+</html>
