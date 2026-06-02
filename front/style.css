@@ -21,8 +21,11 @@ button:hover {
     grid-template-columns: 55vw auto;
     align-items: center;
     background-color: white;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 14vw;
+    height: 20vh;
+    width: 86vw;
 }
 
 .header_right h1 {
@@ -61,7 +64,8 @@ button:hover {
     grid-template-columns: 3vw 8vw 3vw;
     background-color: black;
     color: white;
-    position: sticky;
+    position: fixed;
+    height: 20vh;
     top: 0;
 }
 
@@ -748,6 +752,8 @@ body {
 }
 .header_right {
     grid-template-columns: 43vw auto;
+    width: 80vw;
+    left: 20vw;
 }
 .header_right h1 {
     margin-left: 8vw;
@@ -845,6 +851,8 @@ body {
 }
 .header_right {
     grid-template-columns: 43vw auto;
+    width: 80vw;
+    left: 20vw;
 }
 .header_right h1 {
     margin-left: 8vw;
@@ -907,6 +915,8 @@ body {
 }
 .header_right {
     grid-template-columns: 43vw auto;
+    width: 82vw;
+    left: 18vw;
 }
 .header_right h1 {
     margin-left: 8vw;
