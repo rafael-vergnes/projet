@@ -39,7 +39,7 @@ let isClicked_logement = false;
 let docsFinance = document.body.querySelector(".Finance");
 console.log(docsFinance);
 
-let docsEducation = document.body.querySelector(".Éducation");
+let docsEducation = document.body.querySelector(".Education");
 console.log(docsEducation);
 
 let docsProfessionnel = document.body.querySelector(".Professionnel");
