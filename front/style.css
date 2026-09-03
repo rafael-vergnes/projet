@@ -1,270 +1,90 @@
-/*GRID PAGE*/
+/*Réinitaliser le style par défaut + couleur arrière plan + apparence bouton et curseur*/
 
 body {
-    display: grid;
-    grid-template-columns: 14vw auto;
-    grid-template-rows: 20vh 60vh 20vh;
-    margin: 0;
+    margin : 0;
     background-color: #E6E6E6;
 }
 
-button:hover {
+button {
+    border: none;
+    background: none;
     cursor: pointer;
 }
 
-/*HEADER_RIGHT*/
+/*Police d'écriture*/
 
-.header_right {
-    grid-row: 1;
-    grid-column: 2;
-    display: grid;
-    grid-template-columns: 55vw auto;
-    align-items: center;
-    background-color: white;
-    position: fixed;
-    top: 0;
-    left: 14vw;
-    height: 20vh;
-    width: 86vw;
-}
-
-.header_right h1 {
-    margin-left: 10vw;
+h1, h2, h3, h4 {
     font-family: "Montserrat";
 }
 
-.champ_header {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+p, a, input {
+    font-family: "Assistant";
 }
 
-.header_right input {
-    width: 15vw;
-    height: 6vh;
-    border-radius: 50px;
-    padding-left: 1.5vw;
-    border: none;
-    background-color: #E6E6E6;
-    font-family: "Assistant";
-    font-size: 1rem;
+/*Header*/
+
+header a, #inside_burger {
+    display: none;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+}
+
+#logo_arcance {
+    width: 4rem;
 }
 
 #logo_compte {
-    max-width: 100%;
-    height: auto;
+    width: 3rem;
 }
 
-/*HEADER_LEFT*/
-
-.header_left {
-    grid-row: 1;
-    grid-column: 1;
-    display: grid;
-    grid-template-columns: 3vw 8vw 3vw;
-    background-color: black;
-    color: white;
-    position: fixed;
-    height: 20vh;
-    top: 0;
+#logo_burger {
+    width: 2.3rem;
 }
 
-.logo {
-    grid-column: 2;
+header button {
     display: flex;
-    flex-direction: column;
+}
+
+header button:first-child {
+    width: 60px;
+    padding: 0;
     justify-content: center;
-    align-items: center;
 }
 
-.logo h2 {
-    margin: 0px 0px;
-    font-family: "Montserrat";
-}
+/*Menu burger*/
 
-.logo img {
-    width: 6vw;
-}
-
-.header_left button {
-    width: 2vw;
-    align-self: center;
+#inside_burger {
+    padding : 1rem;
+    height: 100%;
     background-color: black;
-    border: none;
-    padding: 0;
-    margin-left: 0.4vw;
-}
-
-.header_left button img {
-    width: 2vw;
-}
-
-/*RESPONSIVE CACHÉ*/
-
-.header_responsive {
-    display: none;
-}
-
-.ajouter_responsive {
-    display: none;
-}
-
-/*NAV*/
-
-nav {
-    grid-row: 2;
-    grid-column: 1;
-    background-color: black;
-    color: white;
-    position: fixed;
-    top: 20vh;
-    width: 14vw;
-    height: 60vh;
-}
-
-nav button {
-    background-color: #660091;
-    color: white;
-    display: flex;
-    align-items: center;
-    padding: 1.2vh 1vw 1.2vh 0.6vw;
-    justify-self: center;
-    margin: 1vh 0vw 4vh 0vw;
-    font-family: "Assistant";
-    font-weight: bolder;
-}
-
-nav button img {
-    margin-right: 0.3vw;
-}
-
-.sous_nav {
-    display: flex;
-    align-items: center;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bolder;
-    font-size: 1.5rem;
-    margin: 2vh 0vw;
-    font-family: "Assistant";
-    display: flex;
-    align-items: center;
-}
-
-nav a:visited {
-    color: white;
-    text-decoration: none;
-}
-
-#bouton_accueil {
-    background-color: #004BD7;
-}
-
-.sous_nav img {
-    margin: 0vh 1.5vw 0vh 2vw;
-}
-
-#coffres, #aide {
-    margin: 0vh 1.8vw 0vh 2.35vw;
-}
-
-nav h3 {
-    font-family: "Assistant";
-}
-
-/*FOOTER*/
-
-footer {
-    grid-row: 3;
-    grid-column: 1;
-    display: grid;
-    grid-template-columns: 11vw 3vw;
-    background-color: black;
-    color: white;
-    position: fixed;
-    top: 80vh;
-    width: 14vw;
-    height: 20vh;
-}
-
-.sous_footer {
-    grid-column: 1;
-    display: flex;
-}
-
-.sous_footer img {
-    margin: 0vh 1.3vw 0vh 2.3vw;
-}
-
-footer button {
-    width: 2vw;
-    align-self: center;
-    background-color: black;
-    border: none;
-    padding: 0;
-    margin-left: 0.4vw;
-}
-
-footer button img {
-    width: 2vw;
-    margin-top: 0.8vh;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-    font-weight: bolder;
-    font-size: 1.5rem;
-    margin: 2vh 0vw;
-    font-family: "Assistant";
-    display: flex;
-    align-items: center;
-}
-
-footer a:visited {
-    color: white;
-    text-decoration: none;
-}
-
-/* MAIN */
-
-main {
-    grid-row: 2 / span 2;
-    grid-column: 2;
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    font-family: "Assistant";
+    position: fixed;
 }
 
-#theInsideFilter {
-    display: none;
-    width: 35vw;
-    justify-content: space-evenly;
+.link_inside_burger {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
 }
 
-#theInsideFilter button {
-    background-color: white;
-    border: 1px solid black;
-    padding: 1vh 0.5vw;
-    font-size: 1rem;
-}
+/*Main*/
 
 main a {
-    background-color: white;
-    padding: 2rem;
-    margin: 1vh 4vw;
     display: flex;
-    align-items: center;
+    background-color: white;
     justify-content: space-between;
+    padding: 1rem;
+    margin: 1rem;
     text-decoration: none;
     color: black;
-    font-weight: bold;
-    font-size: 1.2rem;
-    box-shadow: 2px 2px 5px gray;
 }
 
 main a div {
@@ -272,742 +92,149 @@ main a div {
     align-items: center;
 }
 
-.pdf {
-    margin-right: 1.4vw;
+main a div p {
+    margin: 0rem 1rem;
+    text-decoration: none;
 }
 
-main a button {
-    border: none;
-    background-color: white;
-}
-
-main h3 {
-    font-family: "Montserrat";
-}
-
-.recents {
+#head_main {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    margin: 4vh 4vw 0vh 4vw;
-}
-
-.recents div {
-    display: flex;
     align-items: center;
-}
-
-.recents img {
-    margin-left: 0.3vw;
-}
-
-.recents button {
-    border: none;
-    background-color: #E6E6E6;
-    display: flex;
-    align-items: center;
-}
-
-.justificatifs {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 4vh 4vw 0vh 4vw;
-}
-
-.justificatifs div {
-    display: flex;
-    align-items: center;
-}
-
-.justificatifs img {
-    height: auto;
-    margin-left: 0.3vw;
-}
-
-.justificatifs button {
-    border: none;
-    background-color: #E6E6E6;
-    display: flex;
-    align-items: center;
-}
-
-.filtre {
-    margin-right: 3vw;
-}
-
-.violetBar div {
-    background-color: #660091;
-    height: 1vh;
-    margin-top: 10vh;
-}
-
-/* RESPONSIVE */
-
-@media (max-width: 768px) {
-body {
-    display: grid;
-    grid-template-columns: 100vw;
-    grid-template-rows: 5vh auto;
-    margin: 0;
-    background-color: #E6E6E6;
-}
-.header_right {
-    display: none;
-}
-.header_left {
-    display: none;
-}
-nav {
-    display: none;
-}
-footer {
-    display: none;
-}
-.header_responsive {
-    display: flex;
-    grid-column: 1;
-    grid-template-rows: 1;
-    align-items: center;
-    background-color: black;
-    justify-content: space-around;
-    height: 15vh;
-    position: fixed;
-    top: 0;
-    width: 100vw;
-}
-.header_responsive a {
-    display: flex;
-}
-#logo_compte_responsive {
-    max-width: 100%;
-    height: auto;
-    margin-left: 26vw;
-}
-#logo_burger {
-    max-width: 100%;
-    height: auto;
-    margin-right: 26vw;
-}
-main {
-    display: flex;
-    grid-column: 1;
-    grid-template-rows: 2;
-    flex-direction: column;
-    justify-content: space-between;
-    font-family: "Assistant";
-}
-main a {
-    padding: 1.7rem;
-}
-main a button {
-    margin-left: 2.7vw;
-    display: flex;
-}
-main a button img {
-    height: 4vh;
-}
-.recents {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 14vh 4vw 0vh 4vw;
-}
-.ajouter_responsive {
-    display: flex;
-    justify-content: flex-end;
-    margin: 0vh 1.5vw 5vh 0vw;
-    position: fixed;
-    bottom: 0vh;
-    right: 0vw;
-}
-.ajouter_responsive button {
-    border: none;
-    background-color: rgb(230, 230, 230, 0);
-    margin-right: 0.2vw;
-}
-.violetBar div {
-    background-color: #660091;
-    height: 1vh;
-    margin-top: 15vh;
-}
-.pdf {
-    margin-right: 3vw;
-}
-}
-
-
-@media (max-width: 600px) {
-body {
-    display: grid;
-    grid-template-columns: 100vw;
-    grid-template-rows: 5vh auto;
-    margin: 0;
-    background-color: #E6E6E6;
-}
-.header_right {
-    display: none;
-}
-.header_left {
-    display: none;
-}
-nav {
-    display: none;
-}
-footer {
-    display: none;
-}
-.header_responsive {
-    display: flex;
-    grid-column: 1;
-    grid-template-rows: 1;
-    align-items: center;
-    background-color: black;
-    justify-content: space-around;
-    height: 15vh;
-    position: fixed;
-    top: 0;
-    width: 100vw;
-}
-.header_responsive a {
-    display: flex;
-}
-#logo_compte_responsive {
-    max-width: 100%;
-    height: auto;
-    margin-left: 23vw;
-}
-#logo_burger {
-    max-width: 100%;
-    height: auto;
-    margin-right: 23vw;
-}
-main {
-    display: flex;
-    grid-column: 1;
-    grid-template-rows: 2;
-    flex-direction: column;
-    justify-content: space-between;
-    font-family: "Assistant";
-}
-main a {
-    padding: 1.6rem;
-}
-.recents {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 14vh 4vw 0vh 4vw;
-}
-.ajouter_responsive {
-    display: flex;
-    justify-content: flex-end;
-    margin: 0vh 1.5vw 5vh 0vw;
-    position: fixed;
-    bottom: 0vh;
-    right: 0vw;
-}
-.ajouter_responsive button {
-    border: none;
-    background-color: rgb(230, 230, 230, 0);
-    margin-right: 0.2vw;
-}
-.violetBar div {
-    background-color: #660091;
-    height: 1vh;
-    margin-top: 15vh;
-}
-.pdf {
-    margin-right: 3vw;
-}
-}
-
-
-
-@media (max-width: 500px) {
-body {
-    display: grid;
-    grid-template-columns: 100vw;
-    grid-template-rows: 5vh auto;
-    margin: 0;
-    background-color: #E6E6E6;
-}
-.header_right {
-    display: none;
-}
-.header_left {
-    display: none;
-}
-nav {
-    display: none;
-}
-footer {
-    display: none;
-}
-.header_responsive {
-    display: flex;
-    grid-column: 1;
-    grid-template-rows: 1;
-    align-items: center;
-    background-color: black;
-    justify-content: space-around;
-    height: 15vh;
-    position: fixed;
-    top: 0;
-    width: 100vw;
-}
-.header_responsive a {
-    display: flex;
-}
-#logo_compte_responsive {
-    max-width: 100%;
-    height: auto;
-    margin-left: 21vw;
-}
-#logo_burger {
-    max-width: 100%;
-    height: auto;
-    margin-right: 21vw;
-}
-main {
-    display: flex;
-    grid-column: 1;
-    grid-template-rows: 2;
-    flex-direction: column;
-    justify-content: space-between;
-    font-family: "Assistant";
-}
-main a {
-    padding: 1.2rem;
-}
-main a button {
-    margin-left: 2.7vw;
-    display: flex;
-}
-main a button img {
-    height: 3.5vh;
-}
-.recents {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 13vh 4vw 0vh 4vw;
-}
-.justificatifs {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 2.5vh 4vw 0vh 4vw;
-}
-.ajouter_responsive {
-    display: flex;
-    justify-content: flex-end;
-    margin: 0vh 1.5vw 5vh 0vw;
-    position: fixed;
-    bottom: 0vh;
-    right: 0vw;
-}
-.ajouter_responsive button {
-    border: none;
-    background-color: rgb(230, 230, 230, 0);
-    margin-right: 0.2vw;
-}
-.violetBar div {
-    background-color: #660091;
-    height: 1vh;
-    margin-top: 15vh;
-}
-.pdf {
-    margin-right: 3vw;
-}
-}
-
-
-
-
-@media (min-width: 320px) and (max-width: 400px){
-body {
-    display: grid;
-    grid-template-columns: 100vw;
-    grid-template-rows: 5vh auto;
-    margin: 0;
-    background-color: #E6E6E6;
-}
-.header_right {
-    display: none;
-}
-.header_left {
-    display: none;
-}
-nav {
-    display: none;
-}
-footer {
-    display: none;
-}
-.header_responsive {
-    display: flex;
-    grid-column: 1;
-    grid-template-rows: 1;
-    align-items: center;
-    background-color: black;
-    justify-content: space-around;
-    height: 12vh;
-    position: fixed;
-    top: 0;
-    width: 100vw;
-}
-.header_responsive img {
-    height: 8vh;
-}
-.header_responsive a {
-    display: flex;
-}
-#logo_compte_responsive {
-    max-width: 100%;
-    height: auto;
-    margin-left: 12vw;
-}
-#logo_burger {
-    max-width: 100%;
-    height: auto;
-    margin-right: 12vw;
-}
-main {
-    display: flex;
-    grid-column: 1;
-    grid-template-rows: 2;
-    flex-direction: column;
-    justify-content: space-between;
-    font-family: "Assistant";
-}
-main h3 {
-    font-size: 1rem;
-}
-main a {
-    padding: 0.8rem;
-    font-size: 1rem;
-}
-main p {
-    font-size: 0.8rem;
-}
-main a button {
-    margin-left: 2.7vw;
-    display: flex;
-}
-main a button img {
-    height: 3vh;
-}
-.recents {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 10vh 4vw 0vh 4vw;
-}
-.justificatifs {
-    display: flex;
+    margin: 1rem 0rem;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    margin: 2vh 4vw 0vh 4vw;
 }
-.ajouter_responsive {
+
+main input {
+    height: 2rem;
+    border: none;
+    border-radius: 50px;
+    padding-left: 1rem;
+    margin: 0rem 1rem;
+    width: 9rem;
+}
+
+main h3 {
+    margin-left: 1rem;
+}
+
+.pdf {
+    width: 2rem;
+}
+
+main button {
+    display: flex;
+    align-items: center;
+}
+
+main img {
+    width: 0.25rem;
+}
+
+#conteneur_bouton_plus {
     display: flex;
     justify-content: flex-end;
-    margin: 0vh 1.5vw 5vh 0vw;
-    position: fixed;
-    bottom: 0vh;
-    right: 0vw;
-}
-.ajouter_responsive button {
-    border: none;
-    background-color: rgb(230, 230, 230, 0);
-    margin-right: 0.2vw;
-}
-.violetBar div {
-    background-color: #660091;
-    height: 1vh;
-    margin-top: 14vh;
-}
-.pdf {
-    margin-right: 3vw;
-}
+    margin-right: 1rem;
+    position: sticky;
+    bottom: 1rem;
 }
 
+#conteneur_bouton_plus button {
+    padding: 0rem;
 
+}
 
-@media (min-width: 769px) and (max-width: 1024px){
-body {
+#bouton_plus {
+    width: 4rem;
+}
+
+/* Footer */
+
+#conteneur_footer {
+    background-color: black;
     display: grid;
-    grid-template-columns: 20vw auto;
-    grid-template-rows: 20vh 60vh 20vh;
-    margin: 0;
-    background-color: #E6E6E6;
-}
-.header_left {
-    grid-template-columns: 5vw 10vw 5vw;
-}
-.header_left button {
-    margin-left: 1.9vw;
-}
-.header_right {
-    grid-template-columns: 43vw auto;
-    width: 80vw;
-    left: 20vw;
-}
-.header_right h1 {
-    margin-left: 8vw;
-    font-family: "Montserrat";
-}
-.header_right input {
-    width: 18vw;
-    padding-left: 2.5vw;
-    font-size: 0.9rem;
-}
-.champ_header {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-#logo_compte {
-    max-width: 80%;
-    height: auto;
-}
-nav {
-    width: 20vw;
-}
-nav button {
-    font-size: 0.7rem;
-}
-nav button img {
-    margin-right: 0.4vw;
-    width: 1.5vw;
-}
-nav a img {
-    width: 3vw;
-}
-nav a {
-    font-size: 1.2rem;
-    padding-left: 1.6vw;
-}
-#coffres, #aide {
-    margin: 0vh 1.8vw 0vh 2.4vw;
-    width: 2.2vw;
-}
-footer {
-    width: 20vw;
-    grid-template-columns: 15vw 5vw;
-}
-footer a {
-    font-size: 1.2rem;
-    padding-left: 1.6vw;
-}
-footer a img {
-    width: 2.8vw;
-}
-footer button {
-    margin-left: 1.9vw;
-}
-h1 {
-    font-size: 1.5rem;
-}
-main a {
+    grid-template-rows: auto;
     padding: 1rem;
-    font-size: 0.9rem;
-}
-main a button img {
-    height: 4vh;
-}
-p {
-    font-size: 0.9rem;
-}
-.recents button img {
-    height: 4vh;
-}
-.justificatifs button img {
-    height: 4vh;
-}
-.pdf {
-    width: 3vw;
-}
 }
 
+.logo_reseaux {
+    width: 2rem;
+}
 
-
-
-@media (min-width: 1025px) and (max-width: 1440px){
-body {
-    display: grid;
-    grid-template-columns: 20vw auto;
-    grid-template-rows: 20vh 60vh 20vh;
-    margin: 0;
-    background-color: #E6E6E6;
-}
-.header_left {
-    grid-template-columns: 5vw 10vw 5vw;
-}
-.header_left button {
-    margin-left: 1.9vw;
-}
-.header_right {
-    grid-template-columns: 43vw auto;
-    width: 80vw;
-    left: 20vw;
-}
-.header_right h1 {
-    margin-left: 8vw;
-    font-family: "Montserrat";
-}
-.header_right input {
-    width: 16vw;
-    padding-left: 2vw;
-}
-.champ_header {
+#reseaux_sociaux {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-#logo_compte {
-    max-width: 80%;
-    height: auto;
-}
-nav {
-    width: 20vw;
-}
-.sous_nav {
-    padding-left: 2.5vw;
-}
-#coffres, #aide {
-    margin: 0vh 1.8vw 0vh 2.40vw;
-}
-footer {
-    width: 20vw;
-    grid-template-columns: 15vw 5vw;
-}
-footer button {
-    margin-left: 1.9vw;
-}
-.sous_footer {
-    padding-left: 2.5vw;
-}
-main h3 {
-    font-family: "Montserrat";
-    font-size: 1.4rem;
-}
-}
-
-
-
-
-@media (min-width: 2000px) and (max-width: 2560px){
-body {
-    display: grid;
-    grid-template-columns: 18vw auto;
-    grid-template-rows: 20vh 60vh 20vh;
-    margin: 0;
-    background-color: #E6E6E6;
-}
-.header_left {
-    grid-template-columns: 4.5vw 9vw 4.5vw;
-}
-.header_left button {
-    margin-left: 1.9vw;
-}
-.header_right {
-    grid-template-columns: 43vw auto;
-    width: 82vw;
-    left: 18vw;
-}
-.header_right h1 {
-    margin-left: 8vw;
-    font-family: "Montserrat";
-}
-.header_right input {
-    width: 16vw;
-    padding-left: 2vw;
-    font-size: 1.6rem;
-}
-.champ_header {
-    display: flex;
+    width: 8rem;
     align-items: center;
     justify-content: space-evenly;
+    width: auto;
 }
-#logo_compte {
-    width: 5vw;
-    height: auto;
-}
-nav {
-    width: 18vw;
-}
-.sous_nav {
-    padding-left: 2vw;
-}
-.sous_nav a {
-    font-size: 2.5rem;
-}
-.sous_nav img {
-    width: 2.5vw;
-}
-#coffres, #aide {
-    width: 2vw;
-}
-nav button {
-    background-color: #660091;
-    color: white;
+
+#mentions_legales {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: 1.2vh 1vw 1.2vh 0.6vw;
-    justify-self: center;
-    margin: 1vh 0vw 4vh 0vw;
-    font-family: "Assistant";
-    font-weight: bolder;
-    font-size: 1.4rem;
+    text-align: center;
+    justify-content: center;
+    padding: 1rem;
 }
-nav button img {
-    margin-right: 0.3vw;
-    width: 1.1vw;
+
+#plan_site {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+    justify-content: center;
 }
-#coffres, #aide {
-    margin: 0vh 1.8vw 0vh 2.24vw;
+
+#plan_site p {
+    font-weight: bold;
+    margin: 0.5rem 0;
 }
-footer {
-    width: 18vw;
-    grid-template-columns: 13.5vw 4.5vw;
+
+footer a {
+    color: white;
+    text-decoration: none;
 }
-footer button {
-    margin-left: 1.9vw;
+
+#barre_violette {
+    height: 0.7rem;
+    background-color: #660091;
+    margin-top: 1rem;
 }
-.sous_footer {
-    padding-left: 2vw;
-}
-.sous_footer a {
-    font-size: 2.5rem;
-}
-.sous_footer img {
-    width: 2.5vw;
-}
-main a {
-    font-size: 2rem;
-}
-.pdf {
-    width: 3vw;
-}
-main a button img {
-    height: 4vh;
-}
-h1, h2 {
-    font-size: 2.5rem;
-}
-h3 {
-    font-size: 2.3rem;
-}
-p {
-    font-size: 1.8rem;
-}
-.recents img {
-    width: 2.2vw;
-}
-.justificatifs img {
-    width: 2.2vw;
-}
+
+/* Responsive */
+
+@media (min-width: 768px) {
+    body {
+        display: grid;
+        grid-template-columns: auto 768px auto;
+    }
+
+    header, footer {
+        grid-column: 1 / span 3;
+    }
+
+    header button:first-child {
+        display: none;
+    }
+
+    header a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        font-size: 1.3rem;
+    }
+
+    main {
+        grid-column: 2;
+    }
+
+    #conteneur_footer {
+        grid-template-columns: auto auto auto;
+    }
+
+    #mentions_legales {
+        padding: 0;
+    }
 }
